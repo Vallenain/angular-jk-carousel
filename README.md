@@ -55,10 +55,26 @@ vm.arrayData = [
 ```
  - It is possible to set the component to auto slide, if the auto slide time is not set, we use the default of 5 seconds:
  ```html
- <jk-carousel data="ctrl.arrayData" item-template-url="'item-template.html'" auto-slide="true" auto-slide-time="1000" max-width="700" max-height="400" >
+ <jk-carousel data="ctrl.arrayData" 
+              item-template-url="'item-template.html'" 
+              auto-slide="true" 
+              auto-slide-time="1000" 
+              max-width="700" 
+              max-height="400" >
  </jk-carousel>
  ```
-
+ - It is possible to use other characters than the left and right chevrons to navigate. 
+ The underlying HTML is a `<md-icon>` with a `md-font-icon` attribute (see [Material demo](https://material.angularjs.org/latest/demo/icon)). 
+ Pass the ones you want to the directive like so:
+ ```html
+ <jk-carousel data="ctrl.arrayData" 
+              item-template-url="'item-template.html'" 
+              max-width="700" 
+              max-height="400"
+              font-icon-left="'fast_rewind'"
+              font-icon-right="'fast_forward'" >
+ </jk-carousel>
+ ```
 
 ## TODO :
  - Add Fade transition type

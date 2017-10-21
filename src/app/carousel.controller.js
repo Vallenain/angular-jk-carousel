@@ -11,11 +11,11 @@
     that.transitionsEnabled = true;
 
     if(!that.fontIconLeft) {
-      that.mdIconLeft = 'chevron_left';
+      that.fontIconLeft = 'chevron_left';
     }
 
     if(!that.fontIconRight) {
-      that.mdIconRight = 'chevron_right';
+      that.fontIconRight = 'chevron_right';
     }
 
     $attrs.$observe('data', function() {
